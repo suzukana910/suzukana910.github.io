@@ -1,0 +1,728 @@
+@charset "UTF-8";
+body {
+	font-family: "Dosis", "Arial", "Helvetica", "キウイ丸", Kiwi Maru, "游ゴシック", "Yu Gothic", sans-serif;
+	color: #52214E;
+	background-color: #FFFDF7;
+}
+
+/* ------------------------------------
+共通・全体
+------------------------------------ */
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:link {
+	color: #52214E;
+}
+
+/* a:visited {
+	color: #52214E;
+} */
+
+.section-inner {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.col-2, .col-3 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.col-2 .col-2-content {
+	width: calc((100% - 50px)/2);
+}
+
+.col-3 .col-3-content {
+	width: calc((100% - 80px)/3);
+}
+
+.pc-only {
+	display: block;
+}
+
+.sp-only {
+	display: none;
+}
+
+/* ------------------------------------
+トップページ
+------------------------------------ */
+#topAbout, #topNews, #topCharmpoint, #topProducer {
+	padding: 0 0 150px 0;
+	background-color: #FFFDF7;
+	color: #52214E;
+}
+
+/* ------------------------------------
+テキスト
+------------------------------------ */
+
+/* webフォントDosisの中間サイズ　medium:500  */
+
+h2.section-title {
+	font-size: 50px;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	line-height: 1.3em;
+	margin-bottom: 45px;
+}
+
+p.text {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	line-height: 2.1em;
+}
+
+p.title {
+	font-size: 25px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+}
+
+p.small-text {
+	font-size: 15px;
+	font-weight: 300;
+	letter-spacing: 0.08em;
+}
+
+
+/* ------------------------------------
+ヘッダー
+------------------------------------ */
+#header {
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+h1.h-menu {
+	height: 80px;
+	width: 80px;
+	padding: 25px 20px;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background-color: #52214E;
+}
+
+/* ハンバーガーメニュー */
+.h-menu-inner {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.h-menu-inner span {
+	position: absolute;
+	display: block;
+	height: 3px;
+	border-radius: 5px;
+	width: 100%;
+	background-color: #ffffff;
+	transition: all .6s;
+}
+
+.h-menu-inner .top {
+	top: 0;
+}
+
+.h-menu-inner .middle {
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.h-menu-inner .bottom {
+	bottom: 0;
+}
+
+/* ------------------------------------
+トップページ・メインビジュアル
+------------------------------------ */
+#mainvisual {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	background-color: #FFFDF7;
+}
+
+/* ------------------------------------
+トップ・アバウト
+------------------------------------ */
+#topAbout {
+	padding-top: 80px;
+}
+
+/* ------------------------------------
+トップ・ニュース
+------------------------------------ */
+.news-wrapper {
+	background-color: #FFEBB9;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	padding: 20px 70px;
+	display: flex;
+	color: #52214E;
+	font-weight: 500;
+}
+
+.news-date, .news-text {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	line-height: 2.1em;
+}
+
+.news-date {
+	width: 120px;
+	margin-right: 150px;
+}
+
+/* ------------------------------------
+トップ・チャームポイント
+------------------------------------ */
+#topCharmpoint img {
+	border-radius: 15px;
+}
+
+#topCharmpoint .col-3-content {
+	position: relative;
+	background-color: #FFEBB9;
+	border-radius: 10px;
+	padding: 20px 25px 70px 25px;
+}
+
+#topCharmpoint p.title {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#topCharmpoint p.text {
+	line-height: 1.3em;
+	display: block;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+
+.more-button {
+	position: absolute;
+  bottom: 0;
+	right: 0;
+  z-index: 1;
+	background-color: #52214E;
+	border-radius: 10px 0 10px 0;
+	padding: 10px;
+}
+
+.more-button a {
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+}
+
+/* ホバー時の動き */
+.more-button:hover {
+	background-color: #ffffff;
+	border-radius: 10px 0 10px 0;
+	border: 1px solid rgba(82, 33, 78, 0.3);
+	padding: 10px;
+	transition: 0.3s;
+}
+
+.more-button a:hover {
+	color: #52214E;
+	transition: 0.3s;
+}
+
+/* ------------------------------------
+トップ・プロデューサー
+------------------------------------ */
+h3.producer-name {
+	font-size: 40px;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	margin: -50px 20px 0 0;
+}
+
+h3.producer-name span {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	margin-left: 10px;
+}
+
+#topProducer p.text {
+	margin-top: 30px;
+}
+
+.border {
+	background-color: #FFEBB9;
+	border-radius: 10px;
+	padding: 8px 130px;
+	margin: 25px 265px 0 -10px;
+}
+
+.sns-button {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+}
+
+.sns-button span {
+	font-size: 23px;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	margin-left: 10px;
+	color: #ffffff;
+}
+
+.instagram {
+	margin-right: 180px;
+}
+
+.twitter, .instagram {
+	background-color: #52214E;
+	border-radius: 10px;
+	padding: 8px 20px;
+}
+
+.twitter::before {
+	display: inline-block;
+  width: 20px;
+	content: '\f099';
+	font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+	color: #ffffff;
+}
+
+.instagram::before {
+	display: inline-block;
+  width: 20px;
+	content: '\f16d';
+	font-family: 'Font Awesome 5 Brands';
+  font-weight: 400;
+	color: #ffffff;
+}
+
+.kanerin {
+	padding: 0 60px;
+}
+
+/* ホバー時の動き */
+.twitter:hover {
+	background-color: #ffffff;
+	border-radius: 10px;
+	border: 1px solid rgba(82, 33, 78, 0.3);
+	padding: 7px 20px;
+	transition: 0.3s;
+}
+
+.instagram:hover {
+	background-color: #ffffff;
+	border-radius: 10px;
+	border: 1px solid rgba(82, 33, 78, 0.3);
+	padding: 7px 20px;
+	transition: 0.3s;
+}
+
+/* sns名称部分 */
+.sns-button span:hover {
+	color: #52214E;
+	transition: 0.3s;
+}
+
+/* 擬似要素のホバー */
+.twitter:hover::before {
+	color: #52214E;
+	transition: 0.3s;
+}
+
+.instagram:hover::before {
+	color: #52214E;
+	transition: 0.3s;
+}
+
+/* 念の為ボタン全体の色変えを記述 */
+.sns-button {
+	color: #52214E;
+  transition: 0.3s;
+}
+
+/* ------------------------------------
+フッター
+------------------------------------ */
+.footer {
+	background-color: #FFEBB9;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 300px;
+}
+
+.footer-box {
+	display: flex;
+  flex-direction: column;
+}
+
+/* 左側 */
+.footer-foam {
+	padding-top: 65px;
+}
+
+.footer-logo p {
+	margin-top: -10px;
+	font-weight: 500;
+	letter-spacing: 0.08em;
+}
+
+footer h2.section-title {
+	margin-bottom: 0;
+}
+
+.footer-box span {
+	font-weight: bold;
+	background-color: #52214E;
+	border-radius: 10px;
+	padding: 3px;
+	color: #FFFDF7;
+}
+
+.footer-box span:hover {
+	background-color: #FFFDF7;
+	border-radius: 10px;
+	border: 1px solid rgba(82, 33, 78, 0.3);
+	padding: 3px;
+	color: #52214E;
+	transition: 0.3s;
+}
+
+/* 右側 */
+.arrow img {
+	height: 70px;
+	margin-top: 160px;
+}
+
+/*================================================
+画面の横幅が768pxまで
+=================================================*/
+@media screen and (max-width:768px){
+	/* ------------------------------------
+	共通
+	------------------------------------ */
+	.pc-only {
+		display: none;
+	}
+
+	.sp-only {
+		display: block;
+	}
+
+	.section-inner {
+		padding: 0 30px;
+		max-width: 600px;
+	}
+
+	.col-2 {
+		display: block;
+	}
+
+	.col-2 .col-2-content {
+		width: 100%;
+	}
+
+	.sp-col-2 {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px 0;
+	}
+
+	.sp-col-2 .sp-col-2-content {
+		width: calc((100% - 12px)/2);
+	}
+
+	.col-3 {
+		display: block;
+	}
+
+	.col-3 .col-3-content {
+		width: 100%;
+	}
+
+	/* ------------------------------------
+	テキスト
+	------------------------------------ */
+
+	/* webフォントMontserratの中間サイズ　semibold:600  */
+
+	h2.section-title {
+		font-size: 25px;
+		margin-bottom: 15px;
+		font-weight: 400;
+		letter-spacing: 0.04em;
+	}
+
+	p.text {
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 0.04em;
+		line-height: 1.8em;
+	}
+
+	p.title {
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.01em;
+	}
+
+	p.small-text {
+		font-size: 8px;
+		font-weight: 300;
+		letter-spacing: 0.08em;
+	}
+
+
+
+
+	/* ------------------------------------
+	共通
+	------------------------------------ */
+	#mainvisual {
+		max-width: 600px;
+		position: relative;
+	}
+
+	#topAbout {
+		padding: 30px 0 70px 0;
+	}
+
+	#topNews, #topCharmpoint, #topProducer {
+		padding-bottom: 70px;
+	}
+
+
+
+	/* ------------------------------------
+	ヘッダー
+	------------------------------------ */
+	#header {
+		height: 40px;
+	}
+
+	h1.h-menu {
+		height: 40px;
+		width: 40px;
+		padding: 12px 10px;
+	}
+
+	/* ハンバーガーメニュー */
+	.h-menu-inner span {
+		height: 1.5px;
+		border-radius: 8px;
+	}
+
+	/* ------------------------------------
+	トップ・アバウト
+	------------------------------------ */
+	/* アバウト */
+	#topAbout img {
+		margin-top: 15px;
+	}
+
+
+	/* ------------------------------------
+	トップ・ニュース
+	------------------------------------ */
+	.news-wrapper {
+		border-radius: 8px;
+		margin-bottom: 10px;
+		padding: 10px 20px;
+		font-weight: 500;
+	}
+
+	.news-date, .news-text {
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 0.04em;
+	}
+
+	.news-date {
+		width: 50px;
+		margin-right: 20px;
+	}
+
+	/* ------------------------------------
+	トップ・チャームポイント
+	------------------------------------ */
+	#topCharmpoint img {
+		border-radius: 8px;
+	}
+
+	#topCharmpoint .sp-col-2 {
+		background-color: #FFEBB9;
+		border-radius: 8px;
+		margin-bottom: 10px;
+		padding: 15px 15px 30px 15px;
+		color: #52214E;
+		font-weight: 500;
+		position: relative;
+	}
+
+	#topCharmpoint p.title {
+		text-align: left;
+		margin-bottom: 10px;
+	}
+
+	.more-button {
+		position: absolute;
+	  bottom: 0;
+		left: 0;
+	  z-index: 1;
+		background-color: #52214E;
+		border-radius: 0 8px 0 8px;
+		color: #ffffff;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.01em;
+		/* 打ち消し用 */
+		right: 70%;
+		padding: 2px 0 2px 10px;
+	}
+
+	/* ホバー時の動き */
+	.more-button:hover {
+		border-radius: 0 8px 0 8px;
+		padding: 2px 0 2px 10px;
+	}
+
+	/* ------------------------------------
+	トップ・プロデューサー
+	------------------------------------ */
+	h3.producer-name {
+		font-size: 20px;
+		font-weight: 500;
+		margin: -25px 0 0 0;
+	}
+
+	h3.producer-name span {
+		font-size: 12px;
+		font-weight: 400;
+		letter-spacing: 0.01em;
+		margin-left: 5px;
+	}
+
+	#topProducer p.text {
+		margin-top: 15px;
+		line-height: 1.6em;
+	}
+
+	.border {
+		background-color: #FFEBB9;
+		border-radius: 5px;
+		padding: 3px 72px;
+		margin: 0 265px 0 -5px;
+	}
+
+	.kanerin {
+		padding: 25px 0 0 0;
+	}
+
+	.sns-button {
+		margin-top: 20px;
+		line-height:0;
+		align-items: center;
+	}
+
+	.sns-button span {
+		font-size: 12px;
+		font-weight: 400;
+		margin-left: 10px;
+	}
+
+	.instagram {
+		margin: 0 10px 0 0;
+	}
+
+	.twitter, .instagram {
+		border-radius: 5px;
+		padding: 5px 8px 10px 8px;
+	}
+
+	.twitter::before {
+		font-size: 0.3em;
+		width: 0;
+	}
+
+	.instagram::before {
+	  font-size: 0.3em;
+		width: 0;
+	}
+
+	/* ホバー時の動き */
+	.twitter:hover {
+		border-radius: 5px;
+		padding: 5px 8px 10px 8px;
+	}
+
+	.instagram:hover {
+		border-radius: 5px;
+		padding: 5px 8px 10px 8px;
+	}
+
+	/* ------------------------------------
+	フッター
+	------------------------------------ */
+	.footer-content {
+		height: 120px;
+	}
+
+	/* 左側 */
+	.footer-foam {
+		padding-top: 15px;
+	}
+
+	.footer-box span {
+		font-weight: bold;
+		background-color: #52214E;
+		border-radius: 5px;
+		padding: 2px;
+		color: #FFFDF7;
+	}
+
+	.footer-box span:hover {
+		border-radius: 5px;
+		padding: 2px;
+	}
+
+	/* 右側 */
+	.arrow img {
+		height: 20px;
+		margin-top: 75px;
+	}
+
+
+
+
+
+
+
+}/* メディアクエリ終了 */
